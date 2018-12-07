@@ -9,11 +9,11 @@ remark().use(config)
   })
 
 remark().use(config)
-  .process('A dirty markdown file.', (_err, file)=> {
+  .process('A dirty Markdown file.', (_err, file)=> {
     tap.equal(file.messages.length, 1, 'It finds errors in an invalid Markdown file')
   })
 
 remark().use(config)
-  .process('---\nfront: 1\n---\n\n# Heading\n\nTest file.\n', (_err, file)=> {
+  .process('---\nfront: 1\n---\n\n# Heading\n\nMarkdown.\n', (_err, file)=> {
     tap.equal(file.messages.length, 0, 'It ignores front matter in Markdown files')
   })
