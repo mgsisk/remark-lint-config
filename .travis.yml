@@ -1,0 +1,25 @@
+language: node_js
+
+node_js:
+  - 'node'
+  - 'lts/*'
+
+env:
+  global:
+    - CC_TEST_REPORTER_ID=b2cb5a2be8ff6aefd34d6dafdc9edece963888d60210aae8a6c1b79d2b86c4b5
+
+matrix:
+  fast_finish: true
+
+install:
+  - npm install
+  - mkdir tmp
+  - export PATH=$PATH:$(pwd)/tmp
+
+before_script:
+  - wget -O tmp/cc-test-reporter https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
+  - chmod +x tmp/cc-test-reporter
+  - cc-test-reporter before-build
+
+after_script:
+  - cc-test-reporter after-build -t lcov --exit-code $TRAVIS_TEST_RESULT
