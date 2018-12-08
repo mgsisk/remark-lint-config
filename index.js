@@ -1,4 +1,10 @@
-/* eslint-disable import/no-extraneous-dependencies, import/max-dependencies */
+/* eslint-disable import/max-dependencies */
+
+/**
+ * Remark-lint configuration for general writing.
+ *
+ * @type {Object}
+ */
 module.exports = {
   plugins: [
     require('remark-frontmatter'),
@@ -8,7 +14,7 @@ module.exports = {
     require('remark-preset-lint-consistent'),
 
     // ----- Overrides ---------------------------------------------------------
-    [require('remark-lint-list-item-indent'), 'space'],
+    [require('remark-lint-list-item-indent'), 'space'], // eslint-disable-line import/no-extraneous-dependencies
 
     // ----- Built-In ----------------------------------------------------------
     require('remark-lint-checkbox-content-indent'),
