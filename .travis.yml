@@ -1,8 +1,8 @@
 language: node_js
 
 node_js:
-  - 'node'
-  - 'lts/*'
+  - lts/*
+  - node
 
 env:
   global:
@@ -23,3 +23,12 @@ before_script:
 
 after_script:
   - cc-test-reporter after-build -t lcov --exit-code $TRAVIS_TEST_RESULT
+
+deploy:
+  provider: npm
+  email: me@mgsisk.com
+  api_key:
+    secure: Dh0FhVbFKdGMW9T5Guws8KhV4VVecMb5TlGwPrnA8krA8CSDlvUACJ6eQVQM3l9n2MRtglXXsRUKZ2vHSrvH7ToKwwF8DU2rxgEcv94pJQtodLCchHXahVD8yb0KzVKfL3KZjx2JkwHsq2VWkaJdJGIVpYujw6YOwyFVexKbFFlIqp/t7raxibyPXcPJSgNYlAA33x3VTJsLs8pIV4QafzUPRxsgAWzJle4Uw1Szlkx9p5kxbZhfLxtDWD2Yhl5n0v2QWvKCey2VIQQfRowKtJee94R4iLSkg0qTwZ63yYm7ezms2vf9ewDOFeFCHglvd6aC1eXdsBuU7MIpc3I5HTMBZNBUQby+X6YPbvJYA7eUelpS4JgtLrbys0HMylwTj5Wn2oXmVHwvJ4j82069NAIPVx64P+DiV0nvU2uwuNcuGP5Km0kE4tIWDJByZuO3OZ7OSfyZJJPNN4bw6YryiVulhI+wsnGhDC7UyCuwO300MYfGT4mfhDgzE8wY5C79A5A3V/N2RGZV88UcUPoU/VY0+eZfIypTyImgcf/XmSrEtSwrx8gAq73YQrLpwh1NTDHew0vJsqktzByKAjx6Jsmb7Vy/b8aUUGsPTdkTnzRafsENHSYDQGs7TdWt3xo59D0H4CHjY1dL2qROxtEdQTF19/EuW7xCoW6A8P8DNG4=
+  on:
+    repo: mgsisk/remark-lint-config
+    tags: true
