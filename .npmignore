@@ -1,7 +1,6 @@
 .codeclimate.yml
 .editorconfig
 .eslintrc.js
-.markdownlint.json
 .nyc_output
 .remarkignore
 .remarkrc.js
