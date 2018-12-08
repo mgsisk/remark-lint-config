@@ -1,6 +1,6 @@
 # @mgsisk/remark-lint-config
 
-[![Version 0.1.0][img-version]][url-version]
+[![Version 0.1.1][img-version]][url-version]
 [![Build status][img-build]][url-build]
 [![Maintainability grade][img-maintainability]][url-maintainability]
 [![Test coverage][img-coverage]][url-coverage]
