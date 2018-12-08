@@ -14,10 +14,7 @@
     "postversion": "git push --follow-tags",
     "test": "npm run lint.js && tap tests --coverage-report=lcovonly"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mgsisk/remark-lint-config.git"
-  },
+  "repository": "github:mgsisk/remark-lint-config",
   "keywords": [
     "markdown",
     "remark",
