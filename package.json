@@ -27,6 +27,7 @@
   "author": "mgsisk <me@mgsisk.com> (https://mgsisk.com)",
   "license": "ISC",
   "bugs": {
+    "email": "help@mgsisk.com",
     "url": "https://github.com/mgsisk/remark-lint-config/issues"
   },
   "homepage": "https://github.com/mgsisk/remark-lint-config#readme",
