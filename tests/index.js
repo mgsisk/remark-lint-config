@@ -1,6 +1,6 @@
 const tap = require('tap')
 const remark = require('remark') // eslint-disable-line import/no-extraneous-dependencies
-const config = require('../index.js')
+const config = require('../src')
 
 remark().use(config)
   .process('A clean Markdown file.\n', (err, file)=> {
