@@ -11,7 +11,7 @@
     "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
     "preversion": "npm test",
     "postversion": "git push --follow-tags",
-    "test": "npm run lint.js && tap tests --coverage-report=lcovonly"
+    "test": "npm run lint.js; tap tests --coverage-report=lcovonly"
   },
   "repository": "github:mgsisk/remark-lint-config",
   "keywords": [
