@@ -1,1 +1,1 @@
-module.exports = {plugins: ['./index.js']}
+module.exports = {plugins: ['./src/index.js']}
