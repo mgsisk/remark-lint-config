@@ -10,8 +10,8 @@ module.exports = {
     require('remark-frontmatter'),
 
     // ----- Presets -----------------------------------------------------------
-    require('remark-preset-lint-recommended'),
     require('remark-preset-lint-consistent'),
+    require('remark-preset-lint-recommended'),
 
     // ----- Overrides ---------------------------------------------------------
     [require('remark-lint-list-item-indent'), 'space'], // eslint-disable-line import/no-extraneous-dependencies
@@ -43,6 +43,8 @@ module.exports = {
     require('remark-lint-no-shell-dollars'),
     require('remark-lint-no-table-indentation'),
     require('remark-lint-no-tabs'),
+    require('remark-lint-no-unneeded-full-reference-image'),
+    require('remark-lint-no-unneeded-full-reference-link'),
     require('remark-lint-ordered-list-marker-value'),
     require('remark-lint-table-pipe-alignment'),
     require('remark-lint-table-pipes'),
