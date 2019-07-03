@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.0][] (2019-07-03)
+
+### Added
+- `no-unneeded-full-reference-image`
+- `no-unneeded-full-reference-link`
+
+### Changed
+- Upgraded all dependencies.
+
 ## [0.1.2][] (2018-12-09)
 
 ### Changed
