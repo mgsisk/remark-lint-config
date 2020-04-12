@@ -28,6 +28,11 @@
   "files": [
     "src"
   ],
+  "directories": {
+    "doc": "docs",
+    "lib": "src",
+    "test": "test"
+  },
   "dependencies": {
     "remark-frontmatter": "^2.0.0",
     "remark-lint": "^7.0.0",
