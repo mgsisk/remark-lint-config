@@ -1,6 +1,6 @@
 {
   "name": "@mgsisk/remark-lint-config",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Opinionated remark-lint configuration for writing Markdown.",
   "main": "src/index.js",
   "scripts": {
