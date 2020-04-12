@@ -1,3 +1,5 @@
+'use strict'
+
 /**
  * Remark-lint configuration for general writing.
  *
