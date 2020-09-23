@@ -1,5 +1,3 @@
-'use strict'
-
 /**
  * Remark-lint configuration for general writing.
  *
@@ -7,7 +5,7 @@
  */
 module.exports = {
   plugins: [
-    /* eslint-disable import/max-dependencies */
+    /* eslint-disable capitalized-comments, import/max-dependencies */
     require('remark-frontmatter'),
 
     // ----- Presets -----------------------------------------------------------
@@ -25,15 +23,18 @@ module.exports = {
     [require('remark-lint-unordered-list-marker-style'), 'consistent'],
     /* eslint-enable import/no-extraneous-dependencies */
 
-
     // ----- Built-In ----------------------------------------------------------
     require('remark-lint-checkbox-content-indent'),
+    // require('remark-lint-first-heading-level'),
     require('remark-lint-linebreak-style'),
+    // require('remark-lint-maximum-heading-length'),
+    // require('remark-lint-no-duplicate-defined-urls'),
     require('remark-lint-no-duplicate-headings-in-section'),
     require('remark-lint-no-empty-url'),
     require('remark-lint-no-heading-indent'),
     require('remark-lint-no-heading-like-paragraph'),
     require('remark-lint-no-html'),
+    // require('remark-lint-no-missing-blank-lines'),
     require('remark-lint-no-paragraph-content-indent'),
     require('remark-lint-no-reference-like-url'),
     require('remark-lint-no-tabs'),
@@ -45,6 +46,6 @@ module.exports = {
     require('remark-lint-no-empty-sections'),
     require('remark-lint-no-url-trailing-slash'),
     require('remark-lint-write-good'),
-    /* eslint-enable import/max-dependencies */
+    /* eslint-enable capitalized-comments, import/max-dependencies */
   ],
 }
