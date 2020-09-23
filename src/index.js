@@ -20,7 +20,6 @@ module.exports = {
     [require('remark-lint-no-duplicate-headings'), false],
     [require('remark-lint-no-file-name-irregular-characters'), '\\.a-zA-Z0-9-_'],
     [require('remark-lint-no-file-name-mixed-case'), false],
-    [require('remark-lint-unordered-list-marker-style'), 'consistent'],
     /* eslint-enable import/no-extraneous-dependencies */
 
     // ----- Built-In ----------------------------------------------------------
