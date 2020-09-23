@@ -37,7 +37,10 @@ plugins:
     enabled: true
   nodesecurity:
     enabled: true
+  shellcheck:
+    enabled: true
 exclude_patterns:
+  - ".bundle/"
   - ".nyc_output/"
   - ".vagrant/"
   - "coverage/"
