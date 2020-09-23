@@ -6,7 +6,7 @@
   "scripts": {
     "fix.js": "eslint --fix '**/*.js' '**/.*.js'",
     "lint.js": "eslint '**/*.js' '**/.*.js'",
-    "lint.json": "printf 'package-lock.json package.json' | xargs -n1 jsonlint -q",
+    "lint.json": "YAMLLINT_SCHEMA=JSON_SCHEMA yamllint '**/*.json'",
     "lint.md": "remark . .github/ --ignore-pattern 'LICENSE*'",
     "lint.sh": "shellcheck *.sh",
     "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
