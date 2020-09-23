@@ -28,7 +28,7 @@
   "homepage": "https://github.com/mgsisk/remark-lint-config",
   "funding": "https://github.com/mgsisk/remark-lint-config?sponsor=1",
   "files": [
-    "src"
+    "src/"
   ],
   "directories": {
     "doc": "docs",
