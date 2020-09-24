@@ -1,6 +1,6 @@
 # Changelog
 
-Documents notable project changes. Versions are [semantic][].
+Notable project changes. Versions are [semantic][].
 
 ## [Unreleased][]
 
