@@ -38,7 +38,7 @@
     "test": "test"
   },
   "dependencies": {
-    "remark-frontmatter": "^2.0.0",
+    "remark-frontmatter": "^3.0.0",
     "remark-lint": "^7.0.1",
     "remark-lint-checkbox-content-indent": "^2.0.1",
     "remark-lint-heading-whitespace": "^1.0.0",
