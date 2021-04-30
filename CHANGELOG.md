@@ -2,6 +2,22 @@
 
 Notable project changes. Versions are [semantic][].
 
+## [Unreleased][]
+
+### Added
+
+- `remark-gfm`
+- Settings configuration for `bullet`, `fences`, `listItemIndent`, `rule`, and
+  `tightDefinitions`
+
+### Changed
+
+- Moved NPM deployment to GitHub Actions
+
+### Removed
+
+- `remark-lint-heading-whitespace
+
 ## [0.4.0][] - 2020-09-23
 
 ### Added
@@ -54,6 +70,7 @@ Notable project changes. Versions are [semantic][].
 
 - Standard configuration
 
+[unreleased]: https://github.com/mgsisk/remark-lint-config/compare/v0.4.0...HEAD
 [0.4.0]: https://github.com/mgsisk/remark-lint-config/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/mgsisk/remark-lint-config/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/mgsisk/remark-lint-config/compare/v0.1.2...v0.2.0
