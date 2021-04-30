@@ -4,6 +4,10 @@ Notable project changes. Versions are [semantic][].
 
 ## [Unreleased][]
 
+- No unreleased changes.
+
+## [0.5.0] - 2021-04-30
+
 ### Added
 
 - `remark-gfm`
@@ -70,7 +74,8 @@ Notable project changes. Versions are [semantic][].
 
 - Standard configuration
 
-[unreleased]: https://github.com/mgsisk/remark-lint-config/compare/v0.4.0...HEAD
+[unreleased]: https://github.com/mgsisk/remark-lint-config/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/mgsisk/remark-lint-config/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/mgsisk/remark-lint-config/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/mgsisk/remark-lint-config/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/mgsisk/remark-lint-config/compare/v0.1.2...v0.2.0
