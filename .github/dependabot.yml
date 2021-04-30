@@ -1,5 +1,15 @@
 version: 2
 updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    assignees:
+      - "mgsisk"
+    labels:
+      - "change"
+    reviewers:
+      - "mgsisk"
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
@@ -8,17 +18,5 @@ updates:
       - "mgsisk"
     labels:
       - "change"
-      - "dependencies"
-    reviewers:
-      - "mgsisk"
-  - package-ecosystem: "bundler"
-    directory: "/"
-    schedule:
-      interval: "monthly"
-    assignees:
-      - "mgsisk"
-    labels:
-      - "change"
-      - "dependencies"
     reviewers:
       - "mgsisk"
