@@ -6,6 +6,7 @@
 module.exports = {
   plugins: [
     /* eslint-disable capitalized-comments, import/max-dependencies */
+    require('remark-gfm'),
     require('remark-frontmatter'),
 
     // ----- Presets -----------------------------------------------------------
@@ -41,10 +42,16 @@ module.exports = {
     require('remark-lint-no-unneeded-full-reference-link'),
 
     // ----- External ----------------------------------------------------------
-    require('remark-lint-heading-whitespace'),
     require('remark-lint-no-empty-sections'),
     require('remark-lint-no-url-trailing-slash'),
     require('remark-lint-write-good'),
     /* eslint-enable capitalized-comments, import/max-dependencies */
   ],
+  settings: {
+    bullet: '-',
+    fences: true,
+    listItemIndent: 1,
+    rule: '-',
+    tightDefinitions: true,
+  },
 }
