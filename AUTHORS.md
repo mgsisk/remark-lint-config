@@ -11,5 +11,5 @@ This project was originally created by [Michael Sisk][].
 No contributions from others yet. See the [contributing guidelines][] if you'd
 like to contribute to this project.
 
-[contributing guidelines]: https://github.com/mgsisk/remark-lint-config/blob/master/docs/CONTRIBUTING.md
+[contributing guidelines]: CONTRIBUTING.md
 [michael sisk]: https://mgsisk.com

@@ -2,8 +2,8 @@
 
 A primary goal of this community is to provide a friendly, safe, and welcoming
 environment for everyone. To that end, this code of conduct outlines
-expectations for anyone participating in this community, as well as
-consequences for unacceptable behavior.
+expectations for anyone participating in this community, as well as consequences
+for unacceptable behavior.
 
 ## Behavior
 
@@ -24,7 +24,7 @@ Examples of discouraged behavior include:
 - Derogatory, discriminatory, or insulting imagery or language
 - Publishing or threatening to publish personally identifying information
 - Sexual advances, imagery, or language
-- Violent imagery, language, or threats of violence
+- Violent imagery, language, or threats
 
 ## Consequences
 
@@ -43,18 +43,18 @@ Examples of responses to code of conduct violations include:
 ## Reporting
 
 Report violations of this code of conduct to the community leaders responsible
-for addressing such violations at [coc@mgsisk.com][]. Community leaders will
+for addressing such violations at [conduct@mgsisk.com][]. Community leaders will
 make every effort to acknowledge, review, and address violations as soon as
 possible. Reports will remain confidential, and any public statements resulting
 from a report will keep the identities of victims and reporters confidential
-those individuals instruct community leaders otherwise.
+unless those individuals instruct community leaders otherwise.
 
 ## Appealing
 
 Individual(s) that believe they have been falsely or unfairly accused of
-violating this code of conduct should notify [coc@mgsisk.com][] with a concise
-description of their grievance. Community leaders will make every effort to
-acknowledge, review, and address grievances as soon as possible.
+violating this code of conduct should notify [conduct@mgsisk.com][] with a
+concise description of their grievance. Community leaders will make every effort
+to acknowledge, review, and address grievances.
 
 ## Scope
 
@@ -64,4 +64,4 @@ any space, and any communications related to community business. It also applies
 to unacceptable behavior occurring outside the community when such behavior may
 adversely affect the safety and well-being of community participants.
 
-[coc@mgsisk.com]: mailto:coc@mgsisk.com
+[conduct@mgsisk.com]: mailto:conduct@mgsisk.com

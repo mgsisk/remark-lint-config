@@ -12,7 +12,7 @@ lint rules:
 - [remark-lint-no-url-trailing-slash][]
 - [remark-lint-write-good][]
 
-[authors]: https://github.com/mgsisk/remark-lint-config/blob/master/docs/AUTHORS.md
+[authors]: AUTHORS.md
 [remark-lint-heading-whitespace]: https://github.com/vhf/remark-lint-heading-whitespace
 [remark-lint-no-empty-sections]: https://github.com/vhf/remark-lint-no-empty-sections
 [remark-lint-no-url-trailing-slash]: https://github.com/vhf/remark-lint-no-url-trailing-slash

@@ -1,33 +1,18 @@
 {
   "name": "@mgsisk/remark-lint-config",
+  "main": "src/index.js",
   "version": "0.4.0",
   "description": "Opinionated remark-lint configuration for writing Markdown.",
-  "main": "src/index.js",
-  "scripts": {
-    "fix.js": "eslint --fix '**/*.js' '**/.*.js'",
-    "fix.md": "remark . .github/ --ignore-pattern 'LICENSE*' -o",
-    "fix.sh": "shellcheck *.sh -f diff | git apply",
-    "lint.js": "eslint '**/*.js' '**/.*.js'",
-    "lint.json": "YAMLLINT_SCHEMA=JSON_SCHEMA yamllint '**/*.json' '**/.*.json'",
-    "lint.md": "remark . .github/ --ignore-pattern 'LICENSE*'",
-    "lint.sh": "shellcheck *.sh",
-    "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
-    "test": "tap test",
-    "preversion": "npm test",
-    "version": "git add --all",
-    "postversion": "git push --follow-tags"
-  },
-  "repository": "github:mgsisk/remark-lint-config",
   "keywords": [
     "markdown",
     "remark",
     "remark-lint",
     "remark-lint-config"
   ],
-  "author": "mgsisk <me@mgsisk.com> (https://mgsisk.com)",
-  "license": "ISC",
-  "bugs": "https://github.com/mgsisk/remark-lint-config/issues",
   "homepage": "https://github.com/mgsisk/remark-lint-config#readme",
+  "bugs": "https://github.com/mgsisk/remark-lint-config/issues",
+  "license": "ISC",
+  "author": "Michael Sisk <me@mgsisk.com> (https://mgsisk.com)",
   "funding": "https://github.com/mgsisk/remark-lint-config?sponsor=1",
   "files": [
     "src/"
@@ -37,35 +22,48 @@
     "lib": "src",
     "test": "test"
   },
+  "repository": "github:mgsisk/remark-lint-config",
+  "scripts": {
+    "fix.js": "eslint --fix '**/*.js' '**/.*.js'",
+    "fix.md": "remark . .github/ --ignore-pattern 'LICENSE*' -o",
+    "lint.js": "eslint '**/*.js' '**/.*.js'",
+    "lint.json": "YAMLLINT_SCHEMA=JSON_SCHEMA yamllint '**/*.json' '**/.*.json'",
+    "lint.md": "remark . .github/ --ignore-pattern 'LICENSE*'",
+    "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
+    "test": "tap test",
+    "preversion": "npm test",
+    "version": "git add --all",
+    "postversion": "git push --follow-tags"
+  },
   "dependencies": {
-    "remark-frontmatter": "^2.0.0",
-    "remark-lint": "^7.0.1",
-    "remark-lint-checkbox-content-indent": "^2.0.1",
+    "remark-frontmatter": "^3.0.0",
+    "remark-gfm": "^1.0.0",
+    "remark-lint": "^8.0.0",
+    "remark-lint-checkbox-content-indent": "^3.0.0",
     "remark-lint-heading-whitespace": "^1.0.0",
     "remark-lint-linebreak-style": "^2.0.1",
     "remark-lint-no-duplicate-headings-in-section": "^2.0.2",
     "remark-lint-no-empty-sections": "^4.0.0",
     "remark-lint-no-empty-url": "^2.0.1",
-    "remark-lint-no-heading-indent": "^2.0.1",
+    "remark-lint-no-heading-indent": "^3.0.0",
     "remark-lint-no-heading-like-paragraph": "^2.0.1",
     "remark-lint-no-html": "^2.0.1",
-    "remark-lint-no-paragraph-content-indent": "^2.0.1",
+    "remark-lint-no-paragraph-content-indent": "^3.0.0",
     "remark-lint-no-reference-like-url": "^2.0.1",
     "remark-lint-no-tabs": "^2.0.1",
     "remark-lint-no-unneeded-full-reference-image": "^2.0.1",
     "remark-lint-no-unneeded-full-reference-link": "^2.0.1",
     "remark-lint-no-url-trailing-slash": "^3.0.1",
     "remark-lint-write-good": "^1.2.0",
-    "remark-preset-lint-consistent": "^3.0.1",
-    "remark-preset-lint-markdown-style-guide": "^3.0.1",
-    "remark-preset-lint-recommended": "^4.0.1"
+    "remark-preset-lint-consistent": "^4.0.0",
+    "remark-preset-lint-markdown-style-guide": "^4.0.0",
+    "remark-preset-lint-recommended": "^5.0.0"
   },
   "devDependencies": {
     "@mgsisk/eslint-config": "^2.0.0",
-    "eslint": "^7.9.0",
-    "remark-cli": "^8.0.1",
-    "shellcheck": "^0.4.4",
-    "tap": "^14.10.8",
+    "eslint": "^7.25.0",
+    "remark-cli": "^9.0.0",
+    "tap": "^15.0.6",
     "yaml-lint": "^1.2.4"
   }
 }
