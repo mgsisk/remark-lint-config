@@ -51,7 +51,6 @@ jobs:
         uses: mindsers/changelog-reader-action@master
         with:
           version: ${{ steps.set_vars.outputs.tag_vers }}
-          path: docs/CHANGELOG.md
       - id: create_release
         uses: softprops/action-gh-release@master
         env:
