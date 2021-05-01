@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [10, 12, 14]
+        node: [12.x, 14.x, 15.x]
     steps:
       - uses: actions/checkout@main
       - uses: actions/setup-node@main
@@ -27,7 +27,7 @@ jobs:
           node-version: ${{ matrix.node }}
       - run: npm clean-install
       - run: npm test
-      - if: matrix.node == 14
+      - if: matrix.node == 15.x
         uses: codacy/codacy-coverage-reporter-action@master
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
@@ -51,7 +51,6 @@ jobs:
         uses: mindsers/changelog-reader-action@master
         with:
           version: ${{ steps.set_vars.outputs.tag_vers }}
-          path: docs/CHANGELOG.md
       - id: create_release
         uses: softprops/action-gh-release@master
         env:
