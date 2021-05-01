@@ -27,7 +27,7 @@ jobs:
           node-version: ${{ matrix.node }}
       - run: npm clean-install
       - run: npm test
-      - if: matrix.node == 15.x
+      - if: matrix.node == '15.x'
         uses: codacy/codacy-coverage-reporter-action@master
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
