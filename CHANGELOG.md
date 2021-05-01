@@ -6,7 +6,7 @@ Notable project changes. Versions are [semantic][].
 
 - No unreleased changes.
 
-## [0.5.0] - 2021-04-30
+## [0.5.0][] - 2021-04-30
 
 ### Added
 
@@ -20,7 +20,7 @@ Notable project changes. Versions are [semantic][].
 
 ### Removed
 
-- `remark-lint-heading-whitespace
+- `remark-lint-heading-whitespace`
 
 ## [0.4.0][] - 2020-09-23
 
