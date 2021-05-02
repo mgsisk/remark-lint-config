@@ -24,9 +24,9 @@
   },
   "repository": "github:mgsisk/remark-lint-config",
   "scripts": {
-    "fix.js": "eslint --fix '**/*.js' '**/.*.js'",
+    "fix.js": "eslint --fix '**/*.js'",
     "fix.md": "remark . .github/ --ignore-pattern 'LICENSE*' -o",
-    "lint.js": "eslint '**/*.js' '**/.*.js'",
+    "lint.js": "eslint '**/*.js'",
     "lint.json": "YAMLLINT_SCHEMA=JSON_SCHEMA yamllint '**/*.json' '**/.*.json'",
     "lint.md": "remark . .github/ --ignore-pattern 'LICENSE*'",
     "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
