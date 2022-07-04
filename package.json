@@ -61,7 +61,7 @@
   },
   "devDependencies": {
     "@mgsisk/eslint-config": "^2.0.0",
-    "eslint": "^7.25.0",
+    "eslint": "^8.19.0",
     "remark-cli": "^9.0.0",
     "tap": "^15.0.6",
     "yaml-lint": "^1.2.4"
