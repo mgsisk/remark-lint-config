@@ -1,3 +1,2 @@
-100: true
-coverage-report: lcov
-no-browser: true
+coverage-report:
+  - lcovonly
