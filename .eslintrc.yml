@@ -1,4 +1,5 @@
-extends: '@mgsisk/eslint-config'
+extends: "@mgsisk/eslint-config"
+env:
+  node: true
 ignorePatterns:
-  - coverage/
   - node_modules/
