@@ -87,9 +87,7 @@ doubt, squash to a single commit.
 
 Direct financial support from the community is always a great way to contribute
 to this project; it provides essential monetary support and encourages ongoing
-development. If you'd like to fund a specific issue with this project, please
-use [IssueHunt][]. If you'd like to fund this project's maintainer and their
-ongoing work on this and other projects, please use [Liberapay][].
+development.
 
 [a good commit message]: https://chris.beams.io/posts/git-commit
 [bug report template]: .github/ISSUE_TEMPLATE/bug-report.md
@@ -101,15 +99,11 @@ ongoing work on this and other projects, please use [Liberapay][].
 [discussions]: https://github.com/mgsisk/remark-lint-config/discussions
 [feature request template]: .github/ISSUE_TEMPLATE/feature-request.md
 [forking this repository]: https://help.github.com/en/github/getting-started-with-github/fork-a-repo
-[funding]: .github/FUNDING.yml?sponsor=1
-[issuehunt]: https://issuehunt.io/r/mgsisk
+[funding]: https://github.com/sponsors/mgsisk
 [issues]: https://github.com/mgsisk/remark-lint-config/issues
-[liberapay]: https://liberapay.com/mgsisk
 [node.js]: https://nodejs.org
 [npm-scripts]: https://docs.npmjs.com/misc/scripts
 [pull request template]: .github/PULL_REQUEST_TEMPLATE.md
 [pulls]: https://github.com/mgsisk/remark-lint-config/pulls
 [security policy]: SECURITY.md
 [support resources]: SUPPORT.md
-[vagrant]: https://www.vagrantup.com
-[virtualbox]: https://www.virtualbox.org
