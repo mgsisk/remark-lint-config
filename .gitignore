@@ -1,5 +1,3 @@
-.bundle/
-.nyc_output/
+.tap/
 .vagrant/
-coverage/
 node_modules/
