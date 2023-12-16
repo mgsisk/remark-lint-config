@@ -19,10 +19,10 @@ npm install --save-dev @mgsisk/remark-lint-config
 
 ## Usage
 
-```js
+```yml
 // .remarkrc.yml
 plugins:
-  - '@mgsisk/remark-lint-config'
+  - "@mgsisk/remark-lint-config";
 ```
 
 [Support resources][] are available if you need help with this project. Refer to
@@ -44,9 +44,9 @@ anyone that has found this project useful.
 
 [ISC][]
 
-[badge-build]: https://img.shields.io/travis/com/mgsisk/remark-lint-config
+[badge-build]: https://img.shields.io/github/actions/workflow/status/mgsisk/remark-lint-config/build.yml
 [badge-coverage]: https://img.shields.io/codacy/coverage/368f6b6ae2f74c3e9f04550afd8820ce
-[badge-funding]: https://img.shields.io/liberapay/receives/mgsisk
+[badge-funding]: https://img.shields.io/github/sponsors/mgsisk
 [badge-quality]: https://img.shields.io/codacy/grade/368f6b6ae2f74c3e9f04550afd8820ce
 [badge-release]: https://img.shields.io/github/v/tag/mgsisk/remark-lint-config?sort=semver
 [changelog]: CHANGELOG.md
@@ -58,7 +58,7 @@ anyone that has found this project useful.
 [remark-lint]: https://github.com/remarkjs/remark-lint
 [security]: SECURITY.md
 [support resources]: SUPPORT.md
-[url-build]: https://travis-ci.com/mgsisk/remark-lint-config
+[url-build]: https://github.com/mgsisk/remark-lint-config/actions?query=workflow%3Abuild
 [url-codacy]: https://app.codacy.com/gh/mgsisk/remark-lint-config
 [url-funding]: CONTRIBUTING.md#funding
 [url-release]: https://github.com/mgsisk/remark-lint-config/releases
