@@ -4,7 +4,7 @@ Project maintainers encourage contributions from external security researchers.
 
 ## Disclosure
 
-Report security issues for this project to [security@mgsisk.com][] with this
+Report security issues for this project to [help@mgsisk.com][] with this
 project's name in the subject line. Project maintainers will make every effort
 to acknowledge, review, and address security issues. Reporters will receive
 progress updates, and should work with project maintainers as much as they are
@@ -34,4 +34,4 @@ to the individual(s) responsible for maintaining those projects.
 Project maintainers are not aware of any outstanding security issues.
 
 [changelog]: CHANGELOG.md
-[security@mgsisk.com]: mailto:security@mgsisk.com
+[help@mgsisk.com]: mailto:help@mgsisk.com

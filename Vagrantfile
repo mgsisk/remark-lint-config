@@ -1,23 +1,44 @@
-Vagrant.configure('2') do |config|
+Vagrant.configure('2') do |conf|
   ENV['ZONE'] ||= 'America/Detroit'
 
-  bash_aliases = File.join(Dir.home, '.bash_aliases')
-  bash_profile = File.join(Dir.home, '.bash_profile')
-  gitconfig = File.join(Dir.home, '.gitconfig')
-  gitignore = File.join(Dir.home, '.gitignore')
-  npmrc = File.join(Dir.home, '.npmrc')
-  vimrc = File.join(Dir.home, '.vimrc')
+  is_arm64 = (`uname -m` == 'arm64' || `uname -m` == 'aarch64' || `echo %PROCESSOR_ARCHITECTURE%` == 'ARM64' || `command -v sysctl >/dev/null && arch -64 sh -c "sysctl -in sysctl.proc_translated"`.strip == '0')
+  zsh = File.file?(File.expand_path '~/.zshrc')
 
-  config.vm.box = 'debian/contrib-buster64'
-  config.vm.hostname = File.basename(Dir.pwd) + '.test'
-  config.vm.network 'private_network', type: 'dhcp'
-  config.vm.provision 'file', source: bash_aliases, destination: '~/.bash_aliases' if File.file?(bash_aliases)
-  config.vm.provision 'file', source: bash_profile, destination: '~/.bash_profile' if File.file?(bash_profile)
-  config.vm.provision 'file', source: gitconfig, destination: '~/.gitconfig' if File.file?(gitconfig)
-  config.vm.provision 'file', source: gitignore, destination: '~/.gitignore' if File.file?(gitignore)
-  config.vm.provision 'file', source: npmrc, destination: '~/.npmrc' if File.file?(npmrc)
-  config.vm.provision 'file', source: vimrc, destination: '~/.vimrc' if File.file?(vimrc)
-  config.vm.provision 'shell', path: 'https://github.com/mgsisk/providence/releases/download/v0.1.0/provisioner.sh', env: {
+  conf.vm.box = 'debian/contrib-buster64'
+  conf.vm.box = 'bento/debian-12-arm64' if is_arm64
+  conf.vm.hostname = File.basename(Dir.pwd) + '.test'
+  conf.vm.network 'private_network', type: 'dhcp'
+  [
+    '~/.gitconfig',
+    '~/.gitignore',
+    '~/.npmrc',
+    '~/.vimrc',
+    '~/.zprofile',
+    '~/.zshenv',
+    '~/.zshrc',
+  ].each {|pFile| conf.vm.provision 'file', source: pFile, destination: pFile if File.file?(File.expand_path pFile)}
+  conf.vm.provision 'shell', inline: 'echo "options single-request-reopen" >>/etc/resolv.conf' if is_arm64
+  conf.vm.provision 'shell', path: 'https://github.com/mgsisk/providence/releases/download/v0.1.6/provisioner.sh', env: {
     'ZONE' => ENV['ZONE'],
-  }
+  }.compact
+
+  conf.trigger.before :destroy, :halt, :reload, :suspend do |t|
+    t.info = 'Updating system hosts...'
+    t.ruby do |env, vm|
+      command = "sudo sed -i '' '/ # vagrant-#{vm.id}$/d' /etc/hosts"
+      command = "type %WINDIR%\\system32\\drivers\\etc\\hosts | findstr /e /v /c:vagrant-#{vm.id}>prov-hosts && move /Y prov-hosts %WINDIR%\\system32\\drivers\\etc\\hosts" if Vagrant::Util::Platform.windows?
+      system(command)
+    end
+  end
+
+  conf.trigger.after :reload, :resume, :up do |t|
+    t.info = 'Updating sytstem hosts...'
+    t.ruby do |env, vm|
+      hostname = `vagrant ssh #{vm.name} -c 'hostname -f' -- -q`.chomp
+      ip_address = `vagrant ssh #{vm.name} -c 'hostname -I | cut -f2 -d\\ ' -- -q`.chomp
+      command = "echo '#{ip_address} #{hostname} sys.#{hostname} # vagrant-#{vm.id}' | sudo tee -a /etc/hosts >/dev/null"
+      command = "echo #{ip_address} #{hostname} sys.#{hostname} # vagrant-#{vm.id}>> %WINDIR%\\system32\\drivers\\etc\\hosts" if Vagrant::Util::Platform.windows?
+      system(command)
+    end
+  end
 end

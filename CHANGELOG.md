@@ -4,9 +4,19 @@ Notable project changes. Versions are [semantic][].
 
 ## [Unreleased][]
 
-- No unreleased changes.
+### Added
 
-## [0.5.0] - 2021-04-30
+- `remark-lint-strikethrough-marker`
+
+### Changed
+
+- From CommonJS to ES module
+
+### Removed
+
+- Settings configuration for `fences` and `listItemIndent`
+
+## [0.5.0][] - 2021-04-30
 
 ### Added
 
