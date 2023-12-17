@@ -4,6 +4,10 @@ Notable project changes. Versions are [semantic][].
 
 ## [Unreleased][]
 
+No unreleased changes.
+
+## [1.0.0] - 2023-12-16
+
 ### Added
 
 - `remark-lint-strikethrough-marker`
@@ -84,7 +88,8 @@ Notable project changes. Versions are [semantic][].
 
 - Standard configuration
 
-[unreleased]: https://github.com/mgsisk/remark-lint-config/compare/v0.5.0...HEAD
+[unreleased]: https://github.com/mgsisk/remark-lint-config/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/mgsisk/remark-lint-config/compare/v0.5.0...v1.0.0
 [0.5.0]: https://github.com/mgsisk/remark-lint-config/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/mgsisk/remark-lint-config/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/mgsisk/remark-lint-config/compare/v0.2.0...v0.3.0
